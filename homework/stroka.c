@@ -1,14 +1,20 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
-    char c;
+    char str[100]; // Розмір строки може бути змінений відповідно до вашої потреби
 
     printf("Введіть строку: ");
+    fgets(str, sizeof(str), stdin); // Зчитуємо введену строку разом з пробілами
 
-    while ((c = getchar()) != '\n' && c != EOF) {
-        main();
-        putchar(c);
+    printf("Строка в оберненому порядку: ");
+
+    // Виводимо символи строки в оберненому порядку
+    for (int i = strlen(str) - 1; i >= 0; i--) {
+        printf("%c", str[i]);
     }
+
+    printf("\n"); // Додаємо символ нового рядка для читабельності
 
     return 0;
 }
