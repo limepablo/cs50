@@ -19,6 +19,11 @@ int main(void)
         {
             printf("#");
         }
+        printf("   ");
+        for (c = 0; c <= r; c++)
+        {
+            printf("#");
+        }
         printf("\n");
     }
 }
