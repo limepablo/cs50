@@ -4,10 +4,10 @@
 int main() {
     char str[100];
 
-    printf("Введіть строку: ");
+    printf("Введи строку: ");
     fgets(str, sizeof(str), stdin);
 
-    printf("Строка в оберненому порядку: ");
+    printf("Строка наооборот: ");
 
     for (int i = strlen(str) - 1; i >= 0; i--) {
         printf("%c", str[i]);
