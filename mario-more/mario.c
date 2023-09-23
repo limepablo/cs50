@@ -13,6 +13,10 @@ int main(void)
     {
         printf("8 to height");
     }
+    else
+    {
+    }
+    return 0;
 
     for (r = 0; r < h; r++)
     {
