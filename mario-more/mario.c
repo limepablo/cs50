@@ -9,15 +9,6 @@ int main(void)
         h = get_int ("Height: ");
     }
     while (h < 1 || h > 8);
-    if (h > 8)
-    {
-        printf("8 to height");
-    }
-    else
-    {
-    }
-    return 0;
-
     for (r = 0; r < h; r++)
     {
         for (s = 0; s < h - r - 1; s++)
