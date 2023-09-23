@@ -3,11 +3,23 @@
 
 int main(void)
 {
-    for(int i = 0; i < 3; i++ )
+    int h, r, c, s;
+    do
     {
-        for(int x = 0; x < 10; x++)
+        h = get_int ("Height: ");
+    }
+    while (h < 1 || h > 8);
+
+    for (r = 0; r < h, r++)
+    {
+        for (s = 0; s < h - r - 1; s++)
         {
-            printf("#")
+            printf(" ");
         }
+        for (c = 0; c <= r; c++)
+        {
+            printf("#");
+        }
+        printf("\n");
     }
 }
