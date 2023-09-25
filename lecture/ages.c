@@ -16,8 +16,11 @@ int main()
         printf("Kid\n");
     }   else if (age >= 12 && age <= 19) {
         printf("Youngster\n");
-    }   else {
+    }   else if (age >= 20) {
         printf("Old\n");
+    }   else {
+        printf("Invalid data..\n");
+        return -1;
     }
 
     return 0;
