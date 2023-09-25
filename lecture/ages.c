@@ -5,10 +5,23 @@
  * Якщо вік більший за 20 – вивести у консоль “Дорослий”
 */
 
-#include <cs.50>
+#include <cs50.h>
 #include <stdio.h>
 
 int main()
 {
-    ()
+    int age = get_int("How old are you? ");
+
+    if (age >= 0 && age <= 11) {
+        printf("Kid\n");
+    }   else if (age >= 12 && age <= 19) {
+        printf("Youngster\n");
+    }   else {
+        printf("Old\n");
+    }
+
+    return 0;
+
 }
+
+
