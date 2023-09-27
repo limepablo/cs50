@@ -3,7 +3,10 @@
 
 int main(void)
 {
-    string names[] = {"Grisha", "Illia", "Fillip"};
-    printf("%s\n", names[2]);
-    return 0;
+    int Y_SIZE = 10;
+    int X_SIZE = 10;
+
+    fo
+
+return 0;
 }
