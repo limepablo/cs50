@@ -20,4 +20,7 @@ int main()
 
     printf('Reversed array:\n')
     for(int i = size - 1; i >= 0; i--)
+    {
+        printf("", )
+    }
 }
