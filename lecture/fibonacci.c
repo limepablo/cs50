@@ -10,7 +10,7 @@ int main()
     for(int i = 1; i <= con; i++)
     {
         int temp = a + b;
-        printf("0, 1, %i ", temp);
+        printf("%i ", temp);
         a = b;
         b = temp;
     }
