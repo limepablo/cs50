@@ -3,7 +3,7 @@
 int main()
 {
     int con = 10;
-    int a = 0, b = 1, temp;
+    int a = 0, b = 1;
 
     printf("Result:\n");
 
