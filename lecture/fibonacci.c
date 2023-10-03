@@ -9,7 +9,9 @@ int main()
 
     for(int i = 1; i <= con; i++)
     {
+        int temp = 
         printf("%i ", a);
-        
+        temp = a;
+        a = b;
     }
 }
