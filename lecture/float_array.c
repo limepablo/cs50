@@ -14,8 +14,9 @@ int main()
 
     do {
     size = get_int("Enter array size: ");
-    float array[size];
     } while (size <= 0);
+
+    float array[size];
 
     for(int i = 0; i < size; i++)
     {
