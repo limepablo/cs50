@@ -10,11 +10,13 @@
 
 int main()
 {
+    int size;
+
     do {
-    int size = get_int("Enter array size: ");
+    size = get_int("Enter array size: ");
     float array[size];
     } while (size <= 0);
-    
+
     for(int i = 0; i < size; i++)
     {
         array[i] = get_float("Enter number %i: ", i + 1);
