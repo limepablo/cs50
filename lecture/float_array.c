@@ -14,5 +14,9 @@ int main()
     float array[size];
 
     for(int i = 0;i < size; i++)
-    array[i] = get_float("Enter number %i: ", i + 1);
+    {
+        array[i] = get_float("Enter number %i: ", i + 1);
+    }
+
+    
 }
