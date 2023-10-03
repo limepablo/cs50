@@ -18,5 +18,6 @@ int main()
         array[i] = get_float("Enter number %i: ", i + 1);
     }
 
-    
+    printf('Reversed array:\n')
+    for(int i = )
 }
