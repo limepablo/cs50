@@ -13,11 +13,11 @@ int main()
     int size = get_int("Enter array size: ");
     float array[size];
 
-    for(int i = 0;i < size; i++)
+    for(int i = 0; i < size; i++)
     {
         array[i] = get_float("Enter number %i: ", i + 1);
     }
 
     printf('Reversed array:\n')
-    for(int i = )
+    for(int i = size - 1; i >= 0; i--)
 }
