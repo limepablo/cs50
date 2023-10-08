@@ -150,6 +150,7 @@ int check_word(string guess, int wordsize, int status[], string choice)
                 }
             }
         }
+        score += status[i];
     }
     // HINTS
     // iterate over each letter of the guess
