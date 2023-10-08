@@ -113,7 +113,7 @@ int main(int argc, string argv[])
     }
     else
     {
-        printf("You lose!\n");
+        printf("You lose! Correct word: %s \n", choice);
     }
     // that's all folks!
     return 0;
