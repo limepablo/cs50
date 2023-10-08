@@ -145,7 +145,7 @@ int check_word(string guess, int wordsize, int status[], string choice)
             {
                 if (guess[i] == choice[j])
                 {
-                    s
+                    status[j] = CLOSE;
                 }
             }
         }
