@@ -39,7 +39,7 @@ int main(int argc, string argv[])
     // TODO #2
     if (wordsize < 5 || wordsize > 8)
     {
-        printf("Error: wordsize must be either 5, 6, 7, or 8");
+        printf("Error: wordsize must be either 5, 6, 7, or 8\n");
         return 1;
     }
 
@@ -86,7 +86,7 @@ int main(int argc, string argv[])
         // TODO #4
         for (int j = 0; j < wordsize; j++)
         {
-            status[j] = WRONG
+            status[j] = WRONG;
         }
 
         // Calculate score for the guess
@@ -178,15 +178,15 @@ void print_word(string guess, int wordsize, int status[])
     {
         if (status[i] == EXACT)
         {
-            printf(GREEN"%c"RESET, guess[i])
+            printf(GREEN"%c"RESET, guess[i]);
         }
         else if (status[i] == CLOSE)
         {
-            printf(YELLOW"%c"RESET, guess[i])
+            printf(YELLOW"%c"RESET, guess[i]);
         }
         else
         {
-            printf(RED"%c"RESET, guess[i])
+            printf(RED"%c"RESET, guess[i]);
         }
     }
 
