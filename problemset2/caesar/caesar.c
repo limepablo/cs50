@@ -1,6 +1,8 @@
 #include <string.h>
 #include <ctype.h>
 #include <cs50.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 int main(int argc, string argv[])
 {
@@ -9,24 +11,24 @@ int main(int argc, string argv[])
 
     {
 
-        int qwe = atoi(argv[1]);
+        int k = atoi(argv[1]);
         string text = get_string("plaintext: ");
         printf("ciphertext: ");
 
-        for (int i = 0, n = strlen(s) ; i < n; i++)
+        for (int i = 0, n = strlen(text) ; i < n; i++)
         {
-            if (s[i] >= 'a' && s[i] <= 'z')
+            if (text[i] >= 'a' && text[i] <= 'z')
             {
-                printf("%c", (((s[i] - 'a') + k) % 26) + 'a');
+                printf("%c", (((text[i] - 'a') + k) % 26) + 'a');
             }
-            else if (s[i] >= 'A' && s[i] <= 'Z')
+            else if (text[i] >= 'A' && text[i] <= 'Z')
             {
-                printf("%c", (((s[i] - 'A') + k) % 26) + 'A');
+                printf("%c", (((text[i] - 'A') + k) % 26) + 'A');
             }
 
             else
             {
-                printf("%c", s[i]);
+                printf("%c", text[i]);
             }
         }
 
