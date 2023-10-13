@@ -30,7 +30,8 @@ int main(void)
         }
     }
 
-    words = words + 1;
+    words++;
+    sent++;
 
     float L = letters / words * 100;
     float S = sent / words * 100;
