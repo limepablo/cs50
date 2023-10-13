@@ -48,7 +48,7 @@ int main(void)
     else
     {
         printf("Grade %i\n", index);
-        printf("%f\n", L);
+        printf("%f\n", 0.0588 * L - 0.296 * S - 15.8);
         printf("%f\n", S);
     }
 }
