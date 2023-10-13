@@ -13,10 +13,19 @@ int main(void)
 
     for(int i = 0; i < strlen(text); i++)
     {
-        if(isalpha(text[i]))
+        if (isalpha(text[i]))
         {
             letters++
         }
-        
+
+        else if (text[i] == ' ')
+        {
+            words++
+        }
+
+        else if (text[i] == '.' || text[i] == '?' || text[i] == '!')
+        {
+            sent++
+        }
     }
 }
