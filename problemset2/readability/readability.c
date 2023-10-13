@@ -35,7 +35,8 @@ int main(void)
     float L = (float) letters / words * 100;
     float S = (float) sent / words * 100;
 
-    int index = 0.0588 * L - 0.296 * S - 15.8;
+    float result = 0.0588 * L - 0.296 * S - 15.8;
+    int index = round(result);
 
     if (index >= 16)
     {
@@ -48,7 +49,5 @@ int main(void)
     else
     {
         printf("Grade %i\n", index);
-        printf("%f\n", 0.0588 * L - 0.296 * S - 15.8);
-        printf("%f\n", S);
     }
 }
