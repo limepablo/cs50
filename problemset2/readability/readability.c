@@ -8,32 +8,32 @@ int main(void)
 {
     string text = get_string("Text: ");
 
-    int letters = 0
-    int words = 0
-    int sent = 0
+    int letters = 0;
+    int words = 0;
+    int sent = 0;
 
     for(int i = 0; i < strlen(text); i++)
     {
         if (isalpha(text[i]))
         {
-            letters++
+            letters++;
         }
 
         else if (text[i] == ' ')
         {
-            words++
+            words++;
         }
 
         else if (text[i] == '.' || text[i] == '?' || text[i] == '!')
         {
-            sent++
+            sent++;
         }
     }
 
-    float L = letters / words * 100
-    float S = sent / words * 100
+    float L = letters / words * 100;
+    float S = sent / words * 100;
 
-    int index = 0.0588 * L - 0.296 * S - 15.8
+    int index = 0.0588 * L - 0.296 * S - 15.8;
 
     if (index >= 16)
     {
