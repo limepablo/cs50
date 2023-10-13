@@ -48,6 +48,7 @@ int main(void)
     else
     {
         printf("Grade %i\n", index);
-        printf("%d\n", letters);
+        printf("%f\n", L);
+        printf("%f\n", S);
     }
 }
