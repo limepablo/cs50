@@ -31,7 +31,6 @@ int main(void)
     }
 
     words++;
-    sent++;
 
     float L = letters / words * 100;
     float S = sent / words * 100;
@@ -49,5 +48,6 @@ int main(void)
     else
     {
         printf("Grade %i\n", index);
+        printf("%d\n", letters);
     }
 }
