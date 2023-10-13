@@ -1,5 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <ctype.h>
+#include <string.h>
 
 int main(void)
 {
@@ -11,7 +13,10 @@ int main(void)
 
     for(int i = 0; i < strlen(text); i++)
     {
-        if(text[i] < 65 && text[i] > 90)
+        if(isalpha(text[i]))
+        {
+            letters++
+        }
         
     }
 }
