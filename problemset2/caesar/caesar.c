@@ -25,7 +25,6 @@ int main(int argc, string argv[])
             {
                 printf("%c", (((text[i] - 'A') + k) % 26) + 'A');
             }
-
             else
             {
                 printf("%c", text[i]);
