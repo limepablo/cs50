@@ -11,7 +11,7 @@ int main(int argc, string argv[])
 
     {
 
-        int k = atoi(argv[1]);
+        int key = atoi(argv[1]);
         string text = get_string("plaintext: ");
         printf("ciphertext: ");
 
@@ -19,11 +19,11 @@ int main(int argc, string argv[])
         {
             if (text[i] >= 'a' && text[i] <= 'z')
             {
-                printf("%c", (((text[i] - 'a') + k) % 26) + 'a');
+                printf("%c", (((text[i] - 'a') + key) % 26) + 'a');
             }
             else if (text[i] >= 'A' && text[i] <= 'Z')
             {
-                printf("%c", (((text[i] - 'A') + k) % 26) + 'A');
+                printf("%c", (((text[i] - 'A') + key) % 26) + 'A');
             }
             else
             {
