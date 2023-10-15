@@ -11,10 +11,7 @@ int main(void)
     while (h < 1 || h > 8);
 
     if(h > 8)
-    {
-        printf("Naxui idi");
-    }
-    
+
     for (r = 0; r < h; r++)
     {
         for (s = 0; s < h - r - 1; s++)
