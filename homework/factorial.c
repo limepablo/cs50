@@ -11,7 +11,9 @@ int factorial(int n) {
 int main() {
     int number = 6;
 
-    if (number < 0) {
-        printf("Factorial for this number does not exist.\n")
+    if (number <= 0) {
+        printf("Factorial for this number does not exist.\n");
+    } else {
+        printf("Factorial: %d\n", )
     }
 }
