@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int factorial(int n);
+int factorial(long unsigned int n);
 
 int main() {
-    int number = 3;
+    long unsigned int number = 32;
 
     if (number <= 0) {
         printf("Factorial for this number does not exist.\n");
@@ -14,7 +14,7 @@ int main() {
     return 0;
 }
 
-int factorial(int n) {
+int factorial(long unsigned int n) {
     if (n <= 1) {
         return 1;
     } else {
