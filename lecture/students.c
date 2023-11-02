@@ -12,6 +12,7 @@ int main() {
 
     return 0;
 }
-students* get_data() {
+students* get_data(int count) {
+    students array[count];
     
 }
