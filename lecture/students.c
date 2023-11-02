@@ -24,8 +24,11 @@ students* get_data(int count) {
     return 0;
 }
 
- void end() {
-    printf("%d ",);
+ void ReturnArray(char *firstname, char secondname, int year) {
+}
+
+int end() {
+    printf("%d", ReturnArray)
 
     return 0;
- }
+}
