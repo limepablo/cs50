@@ -8,7 +8,7 @@ typedef struct {
 } students;
 
 int main() {
-    int count = get_int("How many students:\n");
+    int count = get_int("How many students: \n");
 
     return 0;
 }
@@ -16,7 +16,8 @@ students* get_data(int count) {
     students array[count];
 
     for(int i = 0; i < count; i++) {
-        array[0].firstname = get_string("First name:\n");
-        array[].
+        array[i].firstname = get_string("First name: \n");
+        array[i].secondname = get_string("Second name: \n");
+        array[i].year = get_int("Year: \n");
     }
 }
