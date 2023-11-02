@@ -26,7 +26,7 @@ students* get_data(int count) {
         array[i].year = get_int("Year: \n");
     }
 
-    return &array;
+    return array;
 }
 
 void printstudents(students* array, int count) {
