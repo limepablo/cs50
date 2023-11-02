@@ -9,6 +9,7 @@ typedef struct {
 
 int main() {
     int count = get_int("How many students: ");
+    
 
     return 0;
 }
@@ -29,3 +30,4 @@ void printstudents(students* array, int count) {
         printf("%s %s, %i", array[j].firstname, array[j].secondname, array[j].year);
     }
 }
+
