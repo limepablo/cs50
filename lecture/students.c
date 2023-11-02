@@ -21,11 +21,11 @@ students* get_data(int count) {
         array[i].year = get_int("Year: \n");
     }
 
-    
+    return 0;
 }
 
  void end() {
-    printf("%d\n", array[i].firstname, array[i].secondname, array[i].year);
+    printf("%d ",);
 
     return 0;
  }
