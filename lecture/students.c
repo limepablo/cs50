@@ -9,7 +9,8 @@ typedef struct {
 
 int main() {
     int count = get_int("How many students: ");
-    
+    students* array = get_data(count);
+    printstudents(array, count);
 
     return 0;
 }
