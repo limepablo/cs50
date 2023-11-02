@@ -26,6 +26,6 @@ students* get_data(int count) {
 
 void printstudents(students* array, int count) {
     for(int j = 0; j < count; j++) {
-        printf("%s %s, %i", students[j]);
+        printf("%s %s, %i", array[j].firstname, array[j].secondname, array[j].year);
     }
 }
