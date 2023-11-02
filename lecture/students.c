@@ -7,6 +7,9 @@ typedef struct {
     int year;
 } students;
 
+students* get_data(int count);
+void printstudents(students* array, int count);
+
 int main() {
     int count = get_int("How many students: ");
     students* array = get_data(count);
@@ -23,7 +26,7 @@ students* get_data(int count) {
         array[i].year = get_int("Year: \n");
     }
 
-    return array;
+    return &array;
 }
 
 void printstudents(students* array, int count) {

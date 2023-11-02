@@ -3,6 +3,7 @@
     "files.associations": {
         "stdio.h": "c",
         "numbers": "c",
-        "array": "c"
+        "array": "c",
+        "algorithm": "c"
     }
 }
