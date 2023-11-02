@@ -20,4 +20,7 @@ students* get_data(int count) {
         array[i].secondname = get_string("Second name: \n");
         array[i].year = get_int("Year: \n");
     }
+
+    return array;
 }
+
