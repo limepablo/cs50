@@ -14,5 +14,8 @@ int main() {
 }
 students* get_data(int count) {
     students array[count];
-    
+
+    for(int i = 0; i < count; i++) {
+        array[0].firstname;
+    }
 }
