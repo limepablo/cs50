@@ -2,8 +2,8 @@
 #include <cs50.h>
 
 typedef struct {
-    char firstname[10];
-    char secondname[10];
+    string firstname;
+    string secondname;
     int year;
 } students;
 
@@ -16,6 +16,7 @@ students* get_data(int count) {
     students array[count];
 
     for(int i = 0; i < count; i++) {
-        array[0].firstname;
+        array[0].firstname = get_string("First name:\n");
+        array[].
     }
 }
