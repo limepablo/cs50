@@ -8,7 +8,7 @@ typedef struct {
 } students;
 
 int main() {
-    int count = get_int("How many students: \n");
+    int count = get_int("How many students: ");
 
     return 0;
 }
@@ -21,14 +21,11 @@ students* get_data(int count) {
         array[i].year = get_int("Year: \n");
     }
 
-    return 0;
+    return array;
 }
 
- void ReturnArray(char *firstname, char secondname, int year) {
-}
-
-int end() {
-    printf("%d", ReturnArray)
-
-    return 0;
+void printstudents(students* array, int count) {
+    for(int j = 0; j < count; j++) {
+        printf("%s %s, %i", students[j]);
+    }
 }
