@@ -24,3 +24,8 @@ students* get_data(int count) {
     return array;
 }
 
+ void end() {
+    printf("%d\n", firstname, secondname, year);
+
+    return 0;
+ }
