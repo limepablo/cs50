@@ -44,10 +44,10 @@ int main(int argc, char *argv[]) {
         result = divide(num1, num2);
     } else {
         printf("You cannot do this %s\n", operation);
-        return EXIT_FAILURE;
+        return 1;
     }
 
     printf("Result: %.2f\n", result);
 
-    return EXIT_SUCCESS;
+    return 0;
 }
