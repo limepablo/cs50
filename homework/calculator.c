@@ -30,7 +30,7 @@ int main(int argc, char *argv[]) {
 
     double num1 = atof(argv[1]);
     char *operation = argv[2];
-    double num2 = atof(argv[3]); 
+    double num2 = atof(argv[3]);
 
     double result;
 
