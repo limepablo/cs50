@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-double add(double a, double b) {
+double plus(double a, double b) {
     return a + b;
 }
 
-double subtract(double a, double b) {
+double minus(double a, double b) {
     return a - b;
 }
 
@@ -35,9 +35,9 @@ int main(int argc, char *argv[]) {
     double result;
 
     if (strcmp(operation, "+") == 0) {
-        result = add(num1, num2);
+        result = plus(num1, num2);
     } else if (strcmp(operation, "-") == 0) {
-        result = subtract(num1, num2);
+        result = minus(num1, num2);
     } else if (strcmp(operation, "*") == 0) {
         result = multiply(num1, num2);
     } else if (strcmp(operation, "/") == 0) {
