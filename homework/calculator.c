@@ -2,19 +2,19 @@
 #include <stdlib.h>
 #include <string.h>
 
-int plus(double a, double b) {
+double plus(double a, double b) {
     return a + b;
 }
 
-int minus(double a, double b) {
+double minus(double a, double b) {
     return a - b;
 }
 
-int multiply(double a, double b) {
+double multiply(double a, double b) {
     return a * b;
 }
 
-int divide(double a, double b) {
+double divide(double a, double b) {
     if (b == 0) {
         printf("You can't divide 0\n");
         exit(EXIT_FAILURE);
@@ -28,11 +28,11 @@ int main(int argc, char *argv[]) {
         return EXIT_FAILURE;
     }
 
-    int num1 = atof(argv[1]);
+    double num1 = atof(argv[1]);
     char *operation = argv[2];
-    int num2 = atof(argv[3]);
+    double num2 = atof(argv[3]);
 
-    int result;
+    double result;
 
     if (strcmp(operation, "+") == 0) {
         result = plus(num1, num2);
@@ -47,7 +47,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    printf("Result:\n", result);
+    printf("Result:%.2f\n", result);
 
     return 0;
 }
