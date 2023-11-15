@@ -52,7 +52,7 @@ int main(int argc, char *argv[]) {
     return EXIT_SUCCESS;
 }
 
-void pow (int a, int b) {
+float pow (int a, int b) {
     if (a > 10) {
         return a * b;
     }
