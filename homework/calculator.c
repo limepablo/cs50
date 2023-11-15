@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-double plus();
-double minus();
-double divide();
-double multiply();
+double plus(double a, double b);
+double minus(double a, double b);
+double divide(double a, double b);
+double multiply(double a, double b);
 
 int main(int argc, char *argv[]) {
     if (argc != 4) {
