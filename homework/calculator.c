@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+double plus();
+double minus();
+double divide();
+double multiply();
+
 int main(int argc, char *argv[]) {
     if (argc != 4) {
         printf("Invalid number of arguments. Usage: ./calculator number operation number\n");
