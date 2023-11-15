@@ -5,5 +5,7 @@ int main() {
 
     int myArray[10];
 
+    for (int i = 0; 
+
     return 0;
 }
