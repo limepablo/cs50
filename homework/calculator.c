@@ -2,26 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-double plus(double a, double b) {
-    return a + b;
-}
-
-double minus(double a, double b) {
-    return a - b;
-}
-
-double multiply(double a, double b) {
-    return a * b;
-}
-
-double divide(double a, double b) {
-    if (b == 0) {
-        printf("You can't divide by 0\n");
-        exit(EXIT_FAILURE);
-    }
-    return a / b;
-}
-
 int main(int argc, char *argv[]) {
     if (argc != 4) {
         printf("Invalid number of arguments. Usage: ./calculator number operation number\n");
@@ -52,11 +32,22 @@ int main(int argc, char *argv[]) {
     return EXIT_SUCCESS;
 }
 
-float pow (int a, int b) {
-    if (a > 10) {
-        return a * b;
+double plus(double a, double b) {
+    return a + b;
+}
+
+double minus(double a, double b) {
+    return a - b;
+}
+
+double multiply(double a, double b) {
+    return a * b;
+}
+
+double divide(double a, double b) {
+    if (b == 0) {
+        printf("You can't divide by 0\n");
+        exit(EXIT_FAILURE);
     }
-    else {
-        return b / a;
-    }
+    return a / b;
 }
