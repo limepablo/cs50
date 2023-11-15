@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
         result = plus(num1, num2);
     } else if (strcmp(operation, "-") == 0) {
         result = minus(num1, num2);
-    } else if (strcmp(operation, "*") == 0) {
+    } else if (strcmp(operation, "x") == 0) {
         result = multiply(num1, num2);
     } else if (strcmp(operation, "/") == 0) {
         result = divide(num1, num2);
