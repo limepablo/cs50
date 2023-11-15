@@ -51,3 +51,11 @@ int main(int argc, char *argv[]) {
 
     return EXIT_SUCCESS;
 }
+float pow (int a, int b) {
+    if (a > 10) {
+        return a * b;
+    }
+    else {
+        return b / a;
+    }
+}
