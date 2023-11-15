@@ -16,7 +16,7 @@ double multiply(double a, double b) {
 
 double divide(double a, double b) {
     if (b == 0) {
-        printf("You can't divide 0\n");
+        printf("You can't divide by 0\n");
         exit(EXIT_FAILURE);
     }
     return a / b;
