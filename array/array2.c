@@ -12,9 +12,9 @@ int main() {
         lowercaseAlphabets[i] = lowercaseAlphabets[i] - 32;
     }
 
-    printf("Масив у зворотньому порядку: ");
+    printf("The array in turn order: ");
     for (i = 25; i >= 0; i--) {
-        printf("%c ", lowercaseAlphabets[i]);
+        printf("%c\n", lowercaseAlphabets[i]);
     }
 
 return 0;
