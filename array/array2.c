@@ -17,4 +17,5 @@ int main() {
         printf("%c ", lowercaseAlphabets[i]);
     }
 
-    return 0;
+return 0;
+}
